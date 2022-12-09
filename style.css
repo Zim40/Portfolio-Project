@@ -1,0 +1,64 @@
+:root {
+    --darkdune: rgba(47, 44, 37, 1);
+    --heatheredgray: rgba(186, 171, 143, 1);
+    --darkturq: rgba(120, 159, 143, 1);
+    --lightgrey:rgba(122, 138, 150, 1);
+
+
+}
+* {
+    margin:0;
+    padding: 0;
+
+}
+html{ 
+    background-color: var(--darkdune);
+}
+body {
+    width: 100vw;
+    
+
+}
+.header {
+    display: block;
+    margin: 0px;
+    padding: 10px;
+    border:0px;
+    background:var(--heatheredgray);
+    font-family: 'PT Sans Narrow', 'Verdana', 'Ariel';
+
+}
+    
+.Navigation {
+    display: flex;
+    flex-wrap:wrap;
+    margin: 0px;
+    padding: 0px;
+    border:  var(--darkdune) 0px;
+    float: right;
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    color: var(--darkdune);
+    bottom: 55px;
+
+}
+ .aboutme,
+ .projects,
+ .contact {
+    margin: 0;
+    padding: 80px;
+    font-family: 'PT Sans Narrow', 'Quicksand', 'Verdana'; 
+}
+
+ .aboutme:hover,
+ .projects:hover,
+ .contact:hover {
+    font-size: 25px;
+ }
+ #aboutme2 {
+    border: solid 2px white;
+    background: var(--darkdune);
+    color: white;
+
+ }
