@@ -1,12 +1,22 @@
 :root {
+    --borders:2px solid rgb(176, 139, 115);
+    --boxshadow: 10px 5px rgba(176, 139, 115, 0.78);
     
 }
+
+
 * {
     margin: 0;
     padding: 0;
+    
 }
 body {
-    width: 100vw;
+    width: 100%;
+    background:  rgba(176, 139, 115, 0.5);
+    font-family:  Tahoma, sans-serif;
+}
+header {
+    width:100%;
 }
 
 img.hero {
@@ -15,32 +25,49 @@ img.hero {
     height: 285px;
     position: relative;
     bottom: 0px;
+    
 }
-img {
-    width: 100%;
+.midimage {
+    width: 790px;
+    display: block;
+    height: 370px;
     object-fit: cover;
-    height: 285px;
+    border-radius: 100px;
+    margin: 0px;
+    padding: 0;
+    border: 2px solid rgb(176, 139, 115);
+    position: relative;
+    left: 0px;
+    box-shadow: 10px 5px rgb(176 139 115 / 78%);
 }
+
 h1 {
     position: relative;
-    margin: -4px;
+    margin: 0px;
     padding: 0px;
     font-size: 96px;
-    bottom: -2px;
+    bottom: 0px;
     background: rgba(176, 139, 115, 0.5);
+    font-weight: 100;
 }
 .intro {
     display: flex;
-    margin: 45px;
+    margin: 13px;
     position: relative;
-    padding: 37px;
-    border: 4px dashed black;
-    width: 950px;
-    font-size: 23px;
+    padding: 29px;
+    border: 2px solid rgb(176, 139, 115);
+    width: 94.5%;
+    font-size: 363px;
+    text-align: center;
     line-height: 2;
-    float: right;
+    top: 0px;
+    border-radius: 30px;
+    box-shadow: 10px 5px rgb(176 139 115 / 78%);
+
 }
+
 .nav {
+    width:100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -59,5 +86,84 @@ li a {
     text-decoration:none;
 }
 li a:hover {
-    background-color: black;
+    background-color: rgba(176, 139, 115, 0.5);
 }
+h2, h4  {
+    display: block;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    font-weight: 100;
+}
+p {
+    font-size:18px;
+    text-align: center;
+
+}
+
+.work {
+    display: flex;
+    height:100px;
+    margin: 13px;
+    position: relative;
+    padding: 29px;
+    border: 2px solid rgb(176, 139, 115);
+    width: 94.5%;
+    font-size: 23px;
+    line-height: 2;
+    border-radius: 30px;
+    box-shadow: 10px 5px rgba(176, 139, 115, 0.78);
+}
+#projects {
+    display: flex;
+    border: 5px solid black;
+
+}
+.proj {
+    display: grid;
+    width: 460px;
+    padding: 5px;
+    border: 1px solid black;
+}
+@media  screen and (max-width:768px) {
+  header{
+    width: 100%;}
+  .nav {
+    width:100%;}
+  .hero {
+    width:100%;}
+  #welcometext {
+    width:100%;}
+  h1{
+    width:100%;}
+  #projects{
+    display:none;}
+  .work{
+    height: 249px;
+    width: 100%;
+    text-align: left;
+    padding: 10px;}
+  .intro{
+    height: 249px;
+    width: 100%;
+    text-align: left;
+    padding: 10px;}
+    h2, #Contact{
+    padding:24px;
+   text-align:left;
+    font-size:55px;}
+  
+
+
+
+
+}
+
+
+
+  
+
