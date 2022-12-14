@@ -20,7 +20,7 @@ header {
 }
 
 img.hero {
-    width: 100%;
+    width: 105%;
     object-fit: cover;
     height: 285px;
     position: relative;
@@ -84,6 +84,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration:none;
+    list-style-type: none;
 }
 li a:hover {
     background-color: rgba(176, 139, 115, 0.5);
@@ -119,33 +120,74 @@ p {
     box-shadow: 10px 5px rgba(176, 139, 115, 0.78);
 }
 #projects  {
-    display: flex;
+    display: inline-block;
    
 
 }
+figcaption {
+    background: aliceblue;
+    position: absolute;
+    margin: -56px;
+    padding: 5px;
+    font-size: 24px;
+    border: 2px solid black;
+    border-radius: 14px;
+    left: 152px;
+}
 .proj  {
     display: inline-flex;
-    width: 444px;
+    width: 434px;
     padding: 5px;
     margin:  10px;
     border: 1px solid black;
 }
+ul.footCon {
+    width: 106%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+}
+.mailto, .external {
+    background: black;
+    text-align:center;
+    
+}
+h5 {
+    font-size: 45px;
+    text-align: center;
+    display: block;
+    border: 2px solid black;
+}
 @media  screen and (max-width:768px) {
   header{
-    width: 100%;}
+    width: 105%;}
   .nav {
-    width:100%;}
+    width:105%;}
     li a {
         font-size: 43px;
     }
   .hero {
-    width:100%;}
+    width:105%;}
   #welcometext {
     width:100%;}
   h1{
     width:100%;}
+    .proj {
+        width:100%;
+    }
   #projects{
-    display:none;}
+    width: 100%;
+    height: auto;
+    display:inline-block;}
+
+    figcaption {
+        left: 151px;
+        bottom: -1737px;
+        font-size: 64px;
+    }
   .work{
     height: 529px;
     width: 93%;
