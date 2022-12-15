@@ -1,7 +1,7 @@
 :root {
     --borders:2px solid rgb(176, 139, 115);
     --boxshadow: 10px 5px rgba(176, 139, 115, 0.78);
-    
+    --background:  rgba(176, 139, 115, 0.5);
 }
 
 
@@ -12,13 +12,13 @@
 }
 body {
     width: 100%;
-    background:  rgba(176, 139, 115, 0.5);
+    background:   rgba(176, 139, 115, 0.5);
     font-family:  Tahoma, sans-serif;
 }
 header {
     width:100%;
 }
-
+/* top image */
 img.hero {
     width: 105%;
     object-fit: cover;
@@ -27,45 +27,7 @@ img.hero {
     bottom: 0px;
     
 }
-.midimage {
-    width: 790px;
-    display: block;
-    height: 370px;
-    object-fit: cover;
-    border-radius: 100px;
-    margin: 0px;
-    padding: 0;
-    border: 2px solid rgb(176, 139, 115);
-    position: relative;
-    left: 0px;
-    box-shadow: 10px 5px rgb(176 139 115 / 78%);
-}
-
-h1 {
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    font-size: 96px;
-    bottom: 0px;
-    background: rgba(176, 139, 115, 0.5);
-    font-weight: 100;
-}
-.intro {
-    display: flex;
-    margin: 13px;
-    position: relative;
-    padding: 29px;
-    border: 2px solid rgb(176, 139, 115);
-    width: 94.5%;
-    font-size: 363px;
-    text-align: center;
-    line-height: 2;
-    top: 0px;
-    border-radius: 30px;
-    box-shadow: 10px 5px rgb(176 139 115 / 78%);
-
-}
-
+/* Navigation bar */
 .nav {
     width:100%;
     list-style-type: none;
@@ -100,12 +62,54 @@ h2, h4  {
     top: 0;
     font-weight: 100;
 }
+.midimage {
+    width: 790px;
+    display: block;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin: 0px;
+    padding: 0;
+    border: 2px solid rgb(176, 139, 115);
+    position: relative;
+    left: 0px;
+    box-shadow: 10px 5px rgb(176 139 115 / 78%);
+}
+
+h1 {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    font-size: 96px;
+    bottom: 0px;
+    background: rgba(176, 139, 115, 0.5);
+    font-weight: 100;
+}
+/* First text and box  */
+.intro {
+    display: flex;
+    margin: 13px;
+    position: relative;
+    padding: 29px;
+    border: 2px solid rgb(176, 139, 115);
+    width: 94.5%;
+    font-size: 363px;
+    text-align: center;
+    line-height: 2;
+    top: 0px;
+    border-radius: 30px;
+    box-shadow: 10px 5px rgb(176 139 115 / 78%);
+
+}
+
+
+
 p {
     font-size:18px;
     text-align: center;
 
 }
-
+/* Second text and box  */
 .work {
     display: flex;
     height:100px;
@@ -121,9 +125,8 @@ p {
 }
 #projects  {
     display: inline-block;
-   
+   }
 
-}
 figcaption {
     background: aliceblue;
     position: absolute;
@@ -150,17 +153,18 @@ ul.footCon {
     background-color: black;
     text-align: center;
 }
-.mailto, .external {
-    background: black;
-    text-align:center;
-    
-}
 h5 {
     font-size: 45px;
     text-align: center;
     display: block;
     border: 2px solid black;
 }
+.mailto, .external {
+    background: black;
+    text-align:center;
+    
+}
+
 @media  screen and (max-width:768px) {
   header{
     width: 105%;}
@@ -185,7 +189,7 @@ h5 {
 
     figcaption {
         left: 151px;
-        bottom: -1737px;
+        bottom: -1451px;;
         font-size: 64px;
     }
   .work{
@@ -215,6 +219,10 @@ h5 {
  body {
     background-color: #8A7A7C;
     font-family:'Times New Roman', Times, serif;
+ }
+ h5 {
+    width: 104%;
+    background: white;
  }
     
   
