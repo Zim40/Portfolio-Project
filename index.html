@@ -4,80 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>My Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>Portfolio</h1>
-         
-            <ul class="nav">
-                <li><a href="#About-Me">About Me</a></li>
-                <li><a href="https://github.com/Zim40/" target="_self">Github</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
+   
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
             </ul>
-        
-    </header> 
-    <section>
-        <img class="hero" src="./assets/mockup-photos-5nUNdLueQio-unsplash.jpg">
-            <h2 id="About-Me"><u>About Me</u></h2>
-        
-            <div class="intro">
-              <p id="welcometext">Hi, My Names Michael"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt."<br>Enjoy!</p>
-            </div>
-         
-    </section>
-    
-    
-    <section>
-        
-
-        <h2><u>Projects</u></h2>
-        <div class="work">
-            <article>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            </article>
+          </div>
         </div>
-    </section>
-    <section>
-        <div id="projects">
-            <a href="https://github.com/Zim40/Horiseon-code-refactor">
-            <img  class="proj" src="./assets/3 cards.jpg" >
-            </a><figcaption>Horiseon Code Refactor</figcaption>
-            <section>
-                <a href="https://lilyhargreaves.github.io/chilly-mandrills-project-one/">
-                    <img class="proj" src="./assets/Fetchevents.png">
-                    <figcaption>
-                        FetchEvent</figcaption>
-                    </figcaption>
-                </a>
-            
-            
-            
-            
-            </section>
-            <img class="proj" src="./assets/3 cards.jpg">
-            <img class="proj" src="./assets/3 cards.jpg">
+      </nav>
+      <div class="header">
+        <header>
+          <!--Content before waves-->
+          <div class="inner-header flex">
+      
+            <h1>Simple CSS Waves</h1>
+          </div>
+      
+          <!--Waves Container-->
+          <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+              </g>
+            </svg>
+          </div>
+          <!--Waves end-->
+      
+      </div>
+      </header>
+      <br>
+      <br>
+        <!--Header ends-->
+        <div class="position-relative top-50 start-50 translate-middle">
+          <section class="description">
+            <p>My name is Michael Monaghan and this page is a space to preview the collection of projects I have created</p>
+          </section>
         </div>
-    </section>
-    
-        
-    
 
 
-
-    <footer>
-        <h5>Contact</h5>
-        
-        
-        <ul id="Contact">
-            <nav>
-                <li class="mailto"><a href="mailto:Michaelm810129@gmail.com">Send email</a></li>
-                <li class="external"><a href="https://github.com/Zim40/" target="_self">Github</a></li>
-            </nav>
-        </ul>
-    </footer>
-    
+   
+   <script> src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"</script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
 </body>
 </html>
