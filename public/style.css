@@ -3,6 +3,7 @@
 body {
   margin:0;
   overflow-y: scroll;
+  background: aliceblue;
 }
 
 h1, h2, h3 {
@@ -23,11 +24,11 @@ p {
   position:relative;
   text-align:center;
   background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-  color:white;
+  color:aliceblue;
 }
 .logo {
   width:50px;
-  fill:white;
+  fill:aliceblue;
   padding-right:15px;
   display:inline-block;
   vertical-align: middle;
@@ -60,7 +61,7 @@ p {
   position:relative;
   height:20vh;
   text-align:center;
-  background-color: white;
+  background-color: aliceblue;
 }
 
 /* Animation */
@@ -106,7 +107,16 @@ p {
   }
 }
 .img-thumbnail {
-  max-width: 50%;
+  max-width: 75%;
   border:1px solid black;
   box-shadow: 3px 3px 5px grey;
+}
+.img-thumbnail:hover {
+  box-shadow: 3px 3px 8px black;
+  max-width: 85%;;
+
+}
+
+.container {
+  max-width: 35%;
 }
