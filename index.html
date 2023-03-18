@@ -6,38 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./public/style.css">
     <title>My Portfolio</title>
 </head>
 <body>
    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Portfolio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class=nav-item> 
+              <a class="nav-link active" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
       <div class="header">
         <header>
           <!--Content before waves-->
           <div class="inner-header flex">
       
-            <h1>Simple CSS Waves</h1>
+            <h1>Web Development Portfolio</h1>
           </div>
       
           <!--Waves Container-->
@@ -62,11 +67,74 @@
       <br>
       <br>
         <!--Header ends-->
-        <div class="position-relative top-50 start-50 translate-middle">
-          <section class="description">
-            <p>My name is Michael Monaghan and this page is a space to preview the collection of projects I have created</p>
-          </section>
+      <div class="container">
+        <section class="description" id="about">
+          <h2>About</h2>
+          <p>My name is Michael Monaghan and this page is a space to preview the collection of projects I have created on my
+            Web Development Journey. My journey began at the beginning of 2023 to become a Web Developer with the dream of
+            creating user friendly websites across a broad range of industries, utilizing modern technology to benefit the
+            modern society we live in today, to date the collection of technologies I have learnt revolve around best
+            practices and in demand languages which include, but not limited to: HTML, CSS, JavaScript, MySQL, Sequelize,
+            Express and Handlebars.</p>
+        </section>
+        <hr>
+      </div>
+      <br>
+      
+      <div class="container">
+        <section class="projects" id="projects">
+          <h3>Projects</h3>
+          <p>From the beginning of this journey I have been able to be apart of an amazing group of people that have helped me
+            gain invaluable knowledge in the Web Development world, and because of this I am able to present the projects I
+            have completed, both in group and solo projects.</p>
+        </section>
+        <hr>
+      </div>
+      <br>
+
+      <div class="container d-flex">
+        <div class="img1" style="text-align: center;">
+          <h4 class="projectImgTitle">Fetch Event</h4>
+          <p>The motivation behind this project is to work collaboratively to create an application that uses existing open
+            server-side APIs to suggest live music events to attend based on the user's musical preference and location. This
+            is a great opportunity to practice working collaboratively with other developers in creating an application that
+            is built on taking advantage of the knowledge and creativity of every group member, as well as practicing
+            fundamental coding skills.</p>
+          <img src="./public/images/Fetch Event.png" class="img-thumbnail" alt="Fetch Events project thumbnail">
+          <hr>
         </div>
+        
+      
+      </div>
+      <br>
+      <div class="container d-flex">
+        <div class="img1" style="text-align: center;">
+          <h4 class="projectImgTitle">Horiseon Code Refactor</h4>
+          <p>The Horiseon Code Refactor focused on debugging link errors and consolidating CSS properties to reflect best practices, for example group CSS properties together to minimize code foot print. </p>
+          <img src="./public/images/horiseon.png" class="img-thumbnail" alt="Horiseon code refactor thumbnail">
+          <hr>
+        </div>
+        <hr>
+        <br>
+      </div>
+      <br>
+      
+      <div class="container">
+        <h4>Contact</h4>
+        <p>If you have any questions or would like to get in contact please fill out the form below, thank you.</p>
+      </div>
+      <form method="POST" action="/submit-form">
+        <input type="text" name="name" placeholder="Your name">
+        <input type="text" name="email" placeholder="Your email">
+        <textarea name="message" placeholder="Your message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+      
+      
+      <footer>
+        
+      </footer>
+      
 
 
    
