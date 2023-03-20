@@ -109,14 +109,14 @@ p {
 .img-thumbnail {
   max-width: 75%;
   border:1px solid black;
-  box-shadow: 3px 3px 5px grey;
+  box-shadow: 2px 2px 6px black;
 }
 .img-thumbnail:hover {
-  box-shadow: 3px 3px 8px black;
-  max-width: 85%;;
+  box-shadow: 0 0 0 black;
+  
 
 }
 
 .container {
-  max-width: 35%;
+  max-width: 50%;
 }
