@@ -132,13 +132,14 @@
       <div class="container" id="contact">
         <h4>Contact</h4>
         <p>If you have any questions or would like to get in contact please fill out the form below, thank you.</p>
+      
+        <form id="form" class="submit" method="POST" action="/submit-form">
+          <input type="text" name="name" placeholder="Your name">
+          <input type="text" name="email" placeholder="Your email">
+          <textarea name="message" placeholder="Your message"></textarea>
+          <button type="submit">Send</button>
+        </form>
       </div>
-      <form id="form" class="submit" method="POST" action="/submit-form">
-        <input type="text" name="name" placeholder="Your name">
-        <input type="text" name="email" placeholder="Your email">
-        <textarea name="message" placeholder="Your message"></textarea>
-        <button type="submit">Send</button>
-      </form>
       
       
       <footer>
